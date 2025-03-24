@@ -25,6 +25,132 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Custom styles for beautified UI */
+      .service-card {
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        height: 100%;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .icon-container {
+        height: 90px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: white;
+        font-size: 35px;
+      }
+      .tech-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+      .tech-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .tech-header {
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        padding: 25px 15px;
+        color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .process-step {
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+      }
+      .process-step:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .step-number {
+        font-size: 48px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #ff057c 0%, #8d0b93 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .benefit-card {
+        border-radius: 10px;
+        padding: 30px;
+        transition: all 0.3s ease;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        height: 100%;
+      }
+      .benefit-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .cta-section {
+        background: linear-gradient(135deg, #007991 0%, #78ffd6 100%);
+        border-radius: 10px;
+        padding: 50px 30px;
+        margin: 50px 0;
+      }
+      .section-heading {
+        position: relative;
+        padding-bottom: 15px;
+      }
+      .section-heading:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      }
+      .subheading {
+        color: #6a11cb;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+        /* CTA section */
+        .cta-section {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        padding: 80px 0;
+        color: white;
+        border-radius: 12px;
+        margin: 40px auto;
+      }
+
+      .cta-btn {
+        background: white;
+        color: #6a11cb;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -82,325 +208,334 @@
     <!-- END nav -->
 
     <section
-      class="hero-wrap hero-wrap-2"
-      style="background-image: url('images/logos.png')"
-      data-stellar-background-ratio="0.5"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <div
-          class="row no-gutters slider-text align-items-center justify-content-center"
-        >
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Mobile Application Development</h1>
-            <p class="breadcrumbs">
-              <span class="mr-2"
-                ><a href="index.html"
-                  >Home <i class="ion-ios-arrow-forward"></i></a
-              ></span>
-              <span class="mr-2">Services <i class="ion-ios-arrow-forward"></i></span>
-              <span>Mobile Application Development <i class="ion-ios-arrow-forward"></i></span>
-            </p>
+    class="hero-wrap hero-wrap-2"
+    style="background-image: url('images/logos.png')"
+    data-stellar-background-ratio="0.5"
+  >
+    <div class="overlay"></div>
+    <div class="container">
+      <div
+        class="row no-gutters slider-text align-items-center justify-content-center"
+      >
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">Mobile Application Development</h1>
+          <p class="breadcrumbs">
+            <span class="mr-2"
+              ><a href="index.html"
+                >Home <i class="ion-ios-arrow-forward"></i></a
+            ></span>
+            <span class="mr-2">Services <i class="ion-ios-arrow-forward"></i></span>
+            <span>Mobile Application Development <i class="ion-ios-arrow-forward"></i></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile App Development Introduction -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 heading-section text-center ftco-animate">
+          <span class="subheading">Mobile Solutions</span>
+          <h2 class="mb-4 section-heading">Transform Your Business with Cutting-Edge Mobile Applications</h2>
+          <p class="lead">At AtlasGeek, we create powerful, intuitive, and feature-rich mobile applications that drive business growth and enhance user engagement. Our expert team delivers custom solutions across platforms to meet your specific business requirements.</p>
+          <div class="mt-4">
+            <img src="images/mobile-app-development.jpg" alt="Mobile App Development" class="img-fluid rounded shadow-lg" style="max-height: 300px;">
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Mobile App Development Introduction -->
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Mobile Solutions</span>
-            <h2 class="mb-4">Transform Your Business with Cutting-Edge Mobile Applications</h2>
-            <p>At AtlasGeek, we create powerful, intuitive, and feature-rich mobile applications that drive business growth and enhance user engagement. Our expert team delivers custom solutions across platforms to meet your specific business requirements.</p>
+  <!-- Mobile App Development Services -->
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-start mb-5 pb-2">
+        <div class="col-md-4 heading-section ftco-animate">
+          <span class="subheading subheading-with-line"><small class="pr-2 bg-light">Our Expertise</small></span>
+          <h2 class="mb-4">Mobile App Development Services</h2>
+        </div>
+        <div class="col-md-8 pl-md-5 heading-section ftco-animate">
+          <div class="pl-md-4 border-line">
+            <p>Our comprehensive mobile application development services are designed to help businesses create engaging, high-performance applications that deliver exceptional user experiences and drive tangible business results.</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Mobile App Development Services -->
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-start mb-5 pb-2">
-          <div class="col-md-4 heading-section ftco-animate">
-            <span class="subheading subheading-with-line"><small class="pr-2 bg-light">Our Expertise</small></span>
-            <h2 class="mb-4">Mobile App Development Services</h2>
-          </div>
-          <div class="col-md-8 pl-md-5 heading-section ftco-animate">
-            <div class="pl-md-4 border-line">
-              <p>Our comprehensive mobile application development services are designed to help businesses create engaging, high-performance applications that deliver exceptional user experiences and drive tangible business results.</p>
+      
+      <div class="row">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="service-card p-4 mb-4">
+            <div class="icon-container">
+              <span class="flaticon-idea"></span>
+            </div>
+            <div class="media-body p-2 mt-3 text-center">
+              <h3 class="heading">Native App Development</h3>
+              <p>We build high-performance native applications for iOS and Android platforms using Swift, Objective-C, Java, and Kotlin. Our native apps offer optimal performance, full access to device features, and platform-specific UI elements for the best user experience.</p>
             </div>
           </div>
         </div>
         
-        <div class="row">
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-idea"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Native App Development</h3>
-                <p>We build high-performance native applications for iOS and Android platforms using Swift, Objective-C, Java, and Kotlin. Our native apps offer optimal performance, full access to device features, and platform-specific UI elements for the best user experience.</p>
-              </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="service-card p-4 mb-4">
+            <div class="icon-container">
+              <span class="flaticon-compass-symbol"></span>
             </div>
-          </div>
-          
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-compass-symbol"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Cross-Platform Development</h3>
-                <p>Using Flutter, React Native, and other leading frameworks, we create cross-platform applications that maintain native-like performance while reducing development time and costs. These solutions provide consistent experiences across multiple platforms.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-layers"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Progressive Web Apps</h3>
-                <p>We develop progressive web applications that combine the best features of web and mobile apps. These solutions offer offline capabilities, push notifications, and app-like interfaces while being accessible through web browsers without installation.</p>
-              </div>
+            <div class="media-body p-2 mt-3 text-center">
+              <h3 class="heading">Cross-Platform Development</h3>
+              <p>Using Flutter, React Native, and other leading frameworks, we create cross-platform applications that maintain native-like performance while reducing development time and costs. These solutions provide consistent experiences across multiple platforms.</p>
             </div>
           </div>
         </div>
         
-        <div class="row mt-4">
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-idea"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">App UI/UX Design</h3>
-                <p>Our skilled designers create intuitive, visually appealing interfaces that enhance user engagement and satisfaction. We focus on user-centered design principles, ensuring your app is easy to navigate and delivers a memorable experience.</p>
-              </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="service-card p-4 mb-4">
+            <div class="icon-container">
+              <span class="flaticon-layers"></span>
             </div>
-          </div>
-          
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-compass-symbol"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">App Maintenance & Support</h3>
-                <p>We provide ongoing maintenance and support services to ensure your mobile application remains up-to-date, secure, and optimized. Our team handles regular updates, bug fixes, performance optimization, and feature enhancements.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-layers"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">App Migration & Modernization</h3>
-                <p>We help businesses modernize legacy applications or migrate to new platforms, ensuring improved performance, enhanced security, and better user experiences. Our approach minimizes disruption while maximizing the benefits of modern technologies.</p>
-              </div>
+            <div class="media-body p-2 mt-3 text-center">
+              <h3 class="heading">Progressive Web Apps</h3>
+              <p>We develop progressive web applications that combine the best features of web and mobile apps. These solutions offer offline capabilities, push notifications, and app-like interfaces while being accessible through web browsers without installation.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      
+      <div class="row mt-4">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="service-card p-4 mb-4">
+            <div class="icon-container">
+              <span class="flaticon-idea"></span>
+            </div>
+            <div class="media-body p-2 mt-3 text-center">
+              <h3 class="heading">App UI/UX Design</h3>
+              <p>Our skilled designers create intuitive, visually appealing interfaces that enhance user engagement and satisfaction. We focus on user-centered design principles, ensuring your app is easy to navigate and delivers a memorable experience.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="service-card p-4 mb-4">
+            <div class="icon-container">
+              <span class="flaticon-compass-symbol"></span>
+            </div>
+            <div class="media-body p-2 mt-3 text-center">
+              <h3 class="heading">App Maintenance & Support</h3>
+              <p>We provide ongoing maintenance and support services to ensure your mobile application remains up-to-date, secure, and optimized. Our team handles regular updates, bug fixes, performance optimization, and feature enhancements.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="service-card p-4 mb-4">
+            <div class="icon-container">
+              <span class="flaticon-layers"></span>
+            </div>
+            <div class="media-body p-2 mt-3 text-center">
+              <h3 class="heading">App Migration & Modernization</h3>
+              <p>We help businesses modernize legacy applications or migrate to new platforms, ensuring improved performance, enhanced security, and better user experiences. Our approach minimizes disruption while maximizing the benefits of modern technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Development Process -->
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <span class="subheading">Our Process</span>
-            <h2 class="mb-4">Mobile App Development Workflow</h2>
-            <p>Our structured development process ensures we deliver high-quality mobile applications that meet your business objectives and user expectations.</p>
+  <!-- Development Process -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-md-8 text-center heading-section ftco-animate">
+          <span class="subheading">Our Process</span>
+          <h2 class="mb-4 section-heading">Mobile App Development Workflow</h2>
+          <p class="lead">Our structured development process ensures we deliver high-quality mobile applications that meet your business objectives and user expectations.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3 ftco-animate">
+          <div class="process-step p-4 text-center">
+            <div class="step-number mb-3">01</div>
+            <h3 class="mb-3">Discovery & Strategy</h3>
+            <div class="process-icon mb-3">
+              <img src="images/icon-discovery.png" alt="Discovery" class="img-fluid" style="height: 80px;">
+            </div>
+            <p>We begin by understanding your business goals, target audience, and app requirements to develop a comprehensive mobile strategy.</p>
           </div>
         </div>
         
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                  <div class="text pt-3 px-3 pb-4 text-center">
-                    <h3 class="mb-2">01</h3>
-                    <span class="position mb-2">Discovery & Strategy</span>
-                    <div class="faded">
-                      <p>We begin by understanding your business goals, target audience, and app requirements to develop a comprehensive mobile strategy.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                  <div class="text pt-3 px-3 pb-4 text-center">
-                    <h3 class="mb-2">02</h3>
-                    <span class="position mb-2">UI/UX Design</span>
-                    <div class="faded">
-                      <p>Our design team creates intuitive wireframes and interactive prototypes that visualize the app's flow and functionality before development.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                  <div class="text pt-3 px-3 pb-4 text-center">
-                    <h3 class="mb-2">03</h3>
-                    <span class="position mb-2">Development</span>
-                    <div class="faded">
-                      <p>Using agile methodologies, our developers build your application with clean, maintainable code and regular client feedback cycles.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-lg-3 ftco-animate">
-                <div class="staff">
-                  <div class="text pt-3 px-3 pb-4 text-center">
-                    <h3 class="mb-2">04</h3>
-                    <span class="position mb-2">Testing & Deployment</span>
-                    <div class="faded">
-                      <p>We conduct rigorous testing across devices and platforms before deploying your app to the relevant app stores with optimization for discoverability.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-md-3 ftco-animate">
+          <div class="process-step p-4 text-center">
+            <div class="step-number mb-3">02</div>
+            <h3 class="mb-3">UI/UX Design</h3>
+            <div class="process-icon mb-3">
+              <img src="images/icon-design.png" alt="Design" class="img-fluid" style="height: 80px;">
             </div>
+            <p>Our design team creates intuitive wireframes and interactive prototypes that visualize the app's flow and functionality before development.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 ftco-animate">
+          <div class="process-step p-4 text-center">
+            <div class="step-number mb-3">03</div>
+            <h3 class="mb-3">Development</h3>
+            <div class="process-icon mb-3">
+              <img src="images/icon-development.png" alt="Development" class="img-fluid" style="height: 80px;">
+            </div>
+            <p>Using agile methodologies, our developers build your application with clean, maintainable code and regular client feedback cycles.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-3 ftco-animate">
+          <div class="process-step p-4 text-center">
+            <div class="step-number mb-3">04</div>
+            <h3 class="mb-3">Testing & Deployment</h3>
+            <div class="process-icon mb-3">
+              <img src="images/icon-testing.png" alt="Testing" class="img-fluid" style="height: 80px;">
+            </div>
+            <p>We conduct rigorous testing across devices and platforms before deploying your app to the relevant app stores with optimization for discoverability.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Technologies -->
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-start mb-5 pb-2">
-          <div class="col-md-4 heading-section ftco-animate">
-            <span class="subheading subheading-with-line"><small class="pr-2 bg-light">Tech Stack</small></span>
-            <h2 class="mb-4">Mobile Development Technologies</h2>
+  <!-- Technologies -->
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-start mb-5 pb-2">
+        <div class="col-md-4 heading-section ftco-animate">
+          <span class="subheading subheading-with-line"><small class="pr-2 bg-light">Tech Stack</small></span>
+          <h2 class="mb-4">Mobile Development Technologies</h2>
+        </div>
+        <div class="col-md-8 pl-md-5 heading-section ftco-animate">
+          <div class="pl-md-4 border-line">
+            <p>We leverage cutting-edge technologies and frameworks to build robust, scalable, and feature-rich mobile applications that deliver exceptional user experiences across platforms.</p>
           </div>
-          <div class="col-md-8 pl-md-5 heading-section ftco-animate">
-            <div class="pl-md-4 border-line">
-              <p>We leverage cutting-edge technologies and frameworks to build robust, scalable, and feature-rich mobile applications that deliver exceptional user experiences across platforms.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ftco-animate">
+          <div class="tech-card mb-4">
+            <div class="tech-header text-center">
+              <img src="images/apple-logo.png" alt="iOS" class="mb-3" style="height: 60px;">
+              <h2 class="heading text-white">iOS Development</h2>
+            </div>
+            <div class="bg-white p-4">
+              <ul class="pricing-text mb-0 text-left">
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Swift</strong> - Modern language for iOS</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Objective-C</strong> - Traditional iOS development</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>SwiftUI</strong> - Declarative UI framework</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Core Data</strong> - Data persistence</li>
+                <li class="d-flex align-items-center py-2"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>ARKit</strong> - Augmented reality</li>
+              </ul>
             </div>
           </div>
         </div>
         
-        <div class="row">
-          <div class="col-lg-4 col-md-6 ftco-animate">
-            <div class="block-7 bg-white">
-              <div class="text-center p-4">
-                <h2 class="heading">iOS Development</h2>
-                <ul class="pricing-text mb-5 text-left">
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Swift</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Objective-C</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>SwiftUI</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Core Data</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>ARKit</li>
-                </ul>
-              </div>
+        <div class="col-lg-4 col-md-6 ftco-animate">
+          <div class="tech-card mb-4">
+            <div class="tech-header text-center" style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);">
+              <img src="images/android-logo.png" alt="Android" class="mb-3" style="height: 60px;">
+              <h2 class="heading text-white">Android Development</h2>
+            </div>
+            <div class="bg-white p-4">
+              <ul class="pricing-text mb-0 text-left">
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Kotlin</strong> - Modern Android development</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Java</strong> - Traditional Android language</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Jetpack Compose</strong> - UI toolkit</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Room Database</strong> - Data storage</li>
+                <li class="d-flex align-items-center py-2"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Android NDK</strong> - Native code</li>
+              </ul>
             </div>
           </div>
-          
-          <div class="col-lg-4 col-md-6 ftco-animate">
-            <div class="block-7 bg-white">
-              <div class="text-center p-4">
-                <h2 class="heading">Android Development</h2>
-                <ul class="pricing-text mb-5 text-left">
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Kotlin</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Java</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Jetpack Compose</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Room Database</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Android NDK</li>
-                </ul>
-              </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 ftco-animate">
+          <div class="tech-card mb-4">
+            <div class="tech-header text-center" style="background: linear-gradient(135deg, #5f2c82 0%, #49a09d 100%);">
+              <img src="images/cross-platform-logo.png" alt="Cross-Platform" class="mb-3" style="height: 60px;">
+              <h2 class="heading text-white">Cross-Platform</h2>
             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 ftco-animate">
-            <div class="block-7 bg-white">
-              <div class="text-center p-4">
-                <h2 class="heading">Cross-Platform</h2>
-                <ul class="pricing-text mb-5 text-left">
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Flutter</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>React Native</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Ionic</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Xamarin</li>
-                  <li><span class="ion-ios-checkmark-circle mr-2"></span>Progressive Web Apps</li>
-                </ul>
-              </div>
+            <div class="bg-white p-4">
+              <ul class="pricing-text mb-0 text-left">
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Flutter</strong> - Google's UI toolkit</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>React Native</strong> - JavaScript framework</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Ionic</strong> - Web technology based</li>
+                <li class="d-flex align-items-center py-2 border-bottom"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Xamarin</strong> - C# development</li>
+                <li class="d-flex align-items-center py-2"><span class="ion-ios-checkmark-circle mr-2 text-success"></span><strong>Progressive Web Apps</strong> - Web-based</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Benefits -->
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Benefits</span>
-            <h2 class="mb-4">Why Choose AtlasGeek for Mobile App Development?</h2>
+  <!-- Benefits -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading">Benefits</span>
+          <h2 class="mb-4 section-heading">Why Choose AtlasGeek for Mobile App Development?</h2>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="benefit-card">
+            <div class="icon-container mb-4">
+              <span class="flaticon-idea"></span>
+            </div>
+            <div class="text-center">
+              <h3 class="heading mb-3">Expertise Across Platforms</h3>
+              <p>Our team of skilled developers has extensive experience in iOS, Android, and cross-platform development, ensuring your app performs flawlessly across all devices.</p>
+            </div>
           </div>
         </div>
         
-        <div class="row">
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-idea"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Expertise Across Platforms</h3>
-                <p>Our team of skilled developers has extensive experience in iOS, Android, and cross-platform development, ensuring your app performs flawlessly across all devices.</p>
-              </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="benefit-card">
+            <div class="icon-container mb-4">
+              <span class="flaticon-compass-symbol"></span>
+            </div>
+            <div class="text-center">
+              <h3 class="heading mb-3">User-Centered Design</h3>
+              <p>We prioritize user experience, creating intuitive interfaces that engage users and drive adoption, resulting in higher retention rates and business growth.</p>
             </div>
           </div>
-          
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-compass-symbol"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">User-Centered Design</h3>
-                <p>We prioritize user experience, creating intuitive interfaces that engage users and drive adoption, resulting in higher retention rates and business growth.</p>
-              </div>
+        </div>
+        
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="benefit-card">
+            <div class="icon-container mb-4">
+              <span class="flaticon-layers"></span>
             </div>
-          </div>
-          
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-layers"></span>
-              </div>
-              <div class="media-body p-2 mt-3">
-                <h3 class="heading">Transparent Development</h3>
-                <p>Our agile development approach ensures regular updates and client involvement throughout the project, creating a collaborative partnership for optimal results.</p>
-              </div>
+            <div class="text-center">
+              <h3 class="heading mb-3">Transparent Development</h3>
+              <p>Our agile development approach ensures regular updates and client involvement throughout the project, creating a collaborative partnership for optimal results.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- CTA Section -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-md-10 text-center">
-            <h2 class="mb-4">Ready to Transform Your Business with a Mobile App?</h2>
-            <p class="mb-4">Contact us today to discuss your mobile application needs and discover how we can help you create a powerful, user-friendly solution that drives growth and enhances customer engagement.</p>
-            <p><a href="contact.html" class="btn btn-primary py-3 px-4">Get in Touch</a></p>
+     <section class="ftco-section bg-light ftco-no-pt ftco-no-pb">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 py-5 text-center cta-section">
+            <h2 class="mb-4">Ready to transform your business with Cloud?</h2>
+            <p>
+              Let's discuss how our Cloud and DevOps expertise can drive your
+              growth.
+            </p>
+            <a href="contact.html" class="btn cta-btn px-5 py-3 mt-3"
+              >Contact Us Today</a
+            >
           </div>
         </div>
       </div>

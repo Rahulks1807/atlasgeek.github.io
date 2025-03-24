@@ -15,21 +15,140 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
-
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
-
     <link rel="stylesheet" href="css/aos.css" />
-
     <link rel="stylesheet" href="css/ionicons.min.css" />
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/jquery.timepicker.css" />
-
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+
+      .service-icon {
+        font-size: 2.5rem;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: white;
+      }
+
+      .steps {
+        background-color: white;
+        border-radius: 12px;
+        padding: 30px 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+
+      .steps:hover {
+        transform: translateY(-5px);
+      }
+
+      .steps .icon {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 auto 20px;
+      }
+
+      .tech-logo {
+        filter: grayscale(0%);
+        transition: all 0.3s ease;
+        opacity: 1;
+        max-height: 80px;
+        margin: 0 20px 30px;
+      }
+
+      .tech-logo:hover {
+        transform: scale(1.1);
+      }
+
+      .section-heading {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+      }
+
+      .section-heading:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 3px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+      }
+
+     
+      .cta-section {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        padding: 80px 0;
+        color: white;
+        border-radius: 12px;
+        margin: 40px auto;
+      }
+
+      .cta-btn {
+        background: white;
+        color: #6a11cb;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .tech-section {
+        padding: 80px 0;
+      }
+
+      .category-title {
+        margin-bottom: 30px;
+        color: #333;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+
+      .category-title:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #6a11cb;
+      }
+
+      .tech-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -61,19 +180,32 @@
             <li class="nav-item">
               <a href="project.html" class="nav-link">Project</a>
             </li>
-            
+
             <li class="nav-item dropdown active">
-              <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="servicesDropdown"
+                role="button"
+              >
                 Services
               </a>
               <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <a class="dropdown-item active" href="cloud.html">Cloud & DevOps</a>
-                <a class="dropdown-item" href="salesforce.html">Salesforce Development and Testing</a>
-                <a class="dropdown-item" href="ui-ux.html">IT Consulting with UI/UX design</a>
-                <a class="dropdown-item" href="mobileApplication.html">Mobile Application Development</a>
+                <a class="dropdown-item active" href="cloud.html"
+                  >Cloud & DevOps</a
+                >
+                <a class="dropdown-item" href="salesforce.html"
+                  >Salesforce Development and Testing</a
+                >
+                <a class="dropdown-item" href="ui-ux.html"
+                  >IT Consulting with UI/UX design</a
+                >
+                <a class="dropdown-item" href="mobileApplication.html"
+                  >Mobile Application Development</a
+                >
               </div>
             </li>
-        
+
             <li class="nav-item">
               <a href="blog.html" class="nav-link">Blog</a>
             </li>
@@ -115,8 +247,16 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Accelerate Your Digital Transformation</h2>
-            <p>At AtlasGeek, we help businesses leverage the power of cloud technologies and DevOps practices to drive innovation, reduce costs, and improve operational efficiency. Our expert team designs and implements scalable solutions tailored to your unique business needs.</p>
+            <h2 class="mb-4 section-heading">
+              Accelerate Your Digital Transformation
+            </h2>
+            <p class="lead">
+              At AtlasGeek, we help businesses leverage the power of cloud
+              technologies and DevOps practices to drive innovation, reduce
+              costs, and improve operational efficiency. Our expert team designs
+              and implements scalable solutions tailored to your unique business
+              needs.
+            </p>
           </div>
         </div>
       </div>
@@ -126,53 +266,71 @@
       <div class="container">
         <div class="row justify-content-start mb-5">
           <div class="col-md-4 heading-section ftco-animate">
-            <h2 class="mb-4">Our Cloud Services</h2>
+            <h2 class="mb-4 section-heading">Our Cloud Services</h2>
           </div>
           <div class="col-md-8 pl-md-5 ftco-animate">
             <div class="pl-md-4 border-line">
               <p>
-                We provide comprehensive cloud solutions to help you modernize your infrastructure, optimize costs, and enhance security. Our team has extensive experience with major cloud platforms including AWS, Google Cloud, and Microsoft Azure.
+                We provide comprehensive cloud solutions to help you modernize
+                your infrastructure, optimize costs, and enhance security. Our
+                team has extensive experience with major cloud platforms
+                including AWS, Google Cloud, and Microsoft Azure.
               </p>
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-white p-4 mb-4 service-card"
+            >
+              <div class="service-icon">
                 <span class="flaticon-idea"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Cloud Migration & Modernization</h3>
                 <p>
-                  Seamlessly migrate your applications, data, and infrastructure to the cloud. We assess your current environment, develop migration strategies, and implement modernization approaches to leverage cloud-native technologies.
+                  Seamlessly migrate your applications, data, and infrastructure
+                  to the cloud. We assess your current environment, develop
+                  migration strategies, and implement modernization approaches
+                  to leverage cloud-native technologies.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-white p-4 mb-4 service-card"
+            >
+              <div class="service-icon">
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Cloud Infrastructure Management</h3>
                 <p>
-                  Build and maintain resilient, secure, and scalable cloud infrastructure. Our team implements infrastructure as code, automated provisioning, and comprehensive monitoring solutions for optimal performance.
+                  Build and maintain resilient, secure, and scalable cloud
+                  infrastructure. Our team implements infrastructure as code,
+                  automated provisioning, and comprehensive monitoring solutions
+                  for optimal performance.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-white p-4 mb-4 service-card"
+            >
+              <div class="service-icon">
                 <span class="flaticon-layers"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Cloud Cost Optimization</h3>
                 <p>
-                  Maximize the ROI of your cloud investments through strategic cost optimization. We analyze usage patterns, implement rightsizing strategies, and leverage automation to reduce waste and control expenses.
+                  Maximize the ROI of your cloud investments through strategic
+                  cost optimization. We analyze usage patterns, implement
+                  rightsizing strategies, and leverage automation to reduce
+                  waste and control expenses.
                 </p>
               </div>
             </div>
@@ -185,53 +343,72 @@
       <div class="container">
         <div class="row justify-content-start mb-5">
           <div class="col-md-4 heading-section ftco-animate">
-            <h2 class="mb-4">Our DevOps Services</h2>
+            <h2 class="mb-4 section-heading">Our DevOps Services</h2>
           </div>
           <div class="col-md-8 pl-md-5 ftco-animate">
             <div class="pl-md-4 border-line">
               <p>
-                We implement DevOps practices and tools to streamline development processes, increase deployment frequency, and improve application reliability. Our approach fosters collaboration between development and operations teams for faster delivery.
+                We implement DevOps practices and tools to streamline
+                development processes, increase deployment frequency, and
+                improve application reliability. Our approach fosters
+                collaboration between development and operations teams for
+                faster delivery.
               </p>
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-light p-4 mb-4 service-card"
+            >
+              <div class="service-icon">
                 <span class="flaticon-idea"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">CI/CD Pipeline Implementation</h3>
                 <p>
-                  Build robust continuous integration and delivery pipelines that automate testing, build, and deployment processes. We implement solutions using industry-leading tools like Jenkins, GitLab CI, and GitHub Actions.
+                  Build robust continuous integration and delivery pipelines
+                  that automate testing, build, and deployment processes. We
+                  implement solutions using industry-leading tools like Jenkins,
+                  GitLab CI, and GitHub Actions.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-light p-4 mb-4 service-card"
+            >
+              <div class="service-icon">
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Container Orchestration</h3>
                 <p>
-                  Leverage containerization technologies like Docker and orchestration platforms like Kubernetes to improve application portability, scalability, and resource utilization. We design and manage containerized environments for optimal performance.
+                  Leverage containerization technologies like Docker and
+                  orchestration platforms like Kubernetes to improve application
+                  portability, scalability, and resource utilization. We design
+                  and manage containerized environments for optimal performance.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-light p-4 mb-4 service-card"
+            >
+              <div class="service-icon">
                 <span class="flaticon-layers"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Infrastructure as Code (IaC)</h3>
                 <p>
-                  Implement infrastructure as code practices using tools like Terraform, CloudFormation, and Ansible. Our approach ensures consistent, version-controlled infrastructure that can be deployed reliably across environments.
+                  Implement infrastructure as code practices using tools like
+                  Terraform, CloudFormation, and Ansible. Our approach ensures
+                  consistent, version-controlled infrastructure that can be
+                  deployed reliably across environments.
                 </p>
               </div>
             </div>
@@ -244,47 +421,67 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Our Cloud & DevOps Process</h2>
+            <h2 class="mb-4 section-heading">Our Cloud & DevOps Process</h2>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-12">
             <div class="row ftco-animate">
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 text-center mb-4">
                 <div class="steps">
-                  <div class="icon d-flex justify-content-center align-items-center">
+                  <div
+                    class="icon d-flex justify-content-center align-items-center"
+                  >
                     <span>01</span>
                   </div>
                   <h3>Assessment</h3>
-                  <p>Evaluate current infrastructure, workflows, and business objectives to identify opportunities for improvement.</p>
+                  <p>
+                    Evaluate current infrastructure, workflows, and business
+                    objectives to identify opportunities for improvement.
+                  </p>
                 </div>
               </div>
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 text-center mb-4">
                 <div class="steps">
-                  <div class="icon d-flex justify-content-center align-items-center">
+                  <div
+                    class="icon d-flex justify-content-center align-items-center"
+                  >
                     <span>02</span>
                   </div>
                   <h3>Strategy</h3>
-                  <p>Develop a comprehensive roadmap for cloud adoption and DevOps transformation aligned with your business goals.</p>
+                  <p>
+                    Develop a comprehensive roadmap for cloud adoption and
+                    DevOps transformation aligned with your business goals.
+                  </p>
                 </div>
               </div>
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 text-center mb-4">
                 <div class="steps">
-                  <div class="icon d-flex justify-content-center align-items-center">
+                  <div
+                    class="icon d-flex justify-content-center align-items-center"
+                  >
                     <span>03</span>
                   </div>
                   <h3>Implementation</h3>
-                  <p>Execute the strategy with our expert team, implementing cloud services and DevOps practices tailored to your needs.</p>
+                  <p>
+                    Execute the strategy with our expert team, implementing
+                    cloud services and DevOps practices tailored to your needs.
+                  </p>
                 </div>
               </div>
-              <div class="col-md-3 text-center">
+              <div class="col-md-3 text-center mb-4">
                 <div class="steps">
-                  <div class="icon d-flex justify-content-center align-items-center">
+                  <div
+                    class="icon d-flex justify-content-center align-items-center"
+                  >
                     <span>04</span>
                   </div>
                   <h3>Optimization</h3>
-                  <p>Continuously monitor, refine, and optimize your cloud environment and DevOps processes for maximum efficiency.</p>
+                  <p>
+                    Continuously monitor, refine, and optimize your cloud
+                    environment and DevOps processes for maximum efficiency.
+                  </p>
                 </div>
               </div>
             </div>
@@ -293,37 +490,63 @@
       </div>
     </section>
 
-    <section class="ftco-section">
+    <section class="ftco-section tech-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Technologies We Leverage</h2>
+            <h2 class="mb-4 section-heading">Technologies We Leverage</h2>
           </div>
         </div>
-        
+
         <div class="row text-center">
           <div class="col-lg-12 mb-5">
-            <h4 class="mb-4">Cloud Platforms</h4>
-            <img class="img-fluid mx-3" src="images/google-cloud.png" alt="Google Cloud" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/aws.png" alt="AWS" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/azure-1.png" alt="Azure" style="width: 15vh" />
+            <h4 class="mb-4 category-title">Cloud Platforms</h4>
+            <div class="tech-container">
+              <img
+                class="tech-logo"
+                src="images/google-cloud.png"
+                alt="Google Cloud"
+              />
+              <img class="tech-logo" src="images/aws.png" alt="AWS" />
+              <img class="tech-logo" src="images/azure-1.png" alt="Azure" />
+            </div>
           </div>
-          
+
           <div class="col-lg-12 mb-5">
-            <h4 class="mb-4">Container & Orchestration</h4>
-            <img class="img-fluid mx-3" src="images/docker.png" alt="Docker" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/Kubernetes.png" alt="Kubernetes" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/fluxcd.png" alt="FluxCD" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/Argocd.png" alt="ArgoCD" style="width: 15vh" />
+            <h4 class="mb-4 category-title">Container & Orchestration</h4>
+            <div class="tech-container">
+              <img class="tech-logo" src="images/docker.png" alt="Docker" />
+              <img
+                class="tech-logo"
+                src="images/Kubernetes.png"
+                alt="Kubernetes"
+              />
+              <img class="tech-logo" src="images/fluxcd.png" alt="FluxCD" />
+              <img class="tech-logo" src="images/Argocd.png" alt="ArgoCD" />
+            </div>
           </div>
-          
+
           <div class="col-lg-12">
-            <h4 class="mb-4">CI/CD & Infrastructure</h4>
-            <img class="img-fluid mx-3" src="images/Jenkins.png" alt="Jenkins" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/GitLab_logo.png" alt="GitLab" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/spinnaker.png" alt="Spinnaker" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/git-logo.png" alt="Git" style="width: 15vh" />
-            <img class="img-fluid mx-3" src="images/stackdriver.png" alt="Stackdriver" style="width: 15vh" />
+            <h4 class="mb-4 category-title">CI/CD & Infrastructure</h4>
+            <div class="tech-container">
+              <img class="tech-logo" src="images/Jenkins.png" alt="Jenkins" />
+              <img
+                class="tech-logo"
+                src="images/GitLab_logo.png"
+                alt="GitLab"
+              />
+              <img
+                class="tech-logo"
+                src="images/spinnaker.png"
+                alt="Spinnaker"
+              />
+              <img class="tech-logo" src="images/git-logo.png" alt="Git" />
+              <img
+                class="tech-logo"
+                src="images/stackdriver.png"
+                alt="Stackdriver"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -333,36 +556,47 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Why Choose AtlasGeek for Cloud & DevOps</h2>
+            <h2 class="mb-4 section-heading">
+              Why Choose AtlasGeek for Cloud & DevOps
+            </h2>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-4 ftco-animate">
-            <div class="bg-white p-4 text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            <div class="bg-white p-4 text-center service-card">
+              <div class="service-icon">
                 <span class="flaticon-idea"></span>
               </div>
               <h3>Expert Team</h3>
-              <p>Our certified cloud engineers and DevOps specialists bring years of experience implementing solutions across industries.</p>
+              <p>
+                Our certified cloud engineers and DevOps specialists bring years
+                of experience implementing solutions across industries.
+              </p>
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="bg-white p-4 text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            <div class="bg-white p-4 text-center service-card">
+              <div class="service-icon">
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <h3>Proven Methodology</h3>
-              <p>Our structured approach ensures successful cloud migrations and DevOps transformations with minimal disruption.</p>
+              <p>
+                Our structured approach ensures successful cloud migrations and
+                DevOps transformations with minimal disruption.
+              </p>
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="bg-white p-4 text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            <div class="bg-white p-4 text-center service-card">
+              <div class="service-icon">
                 <span class="flaticon-layers"></span>
               </div>
               <h3>Ongoing Support</h3>
-              <p>We provide continuous monitoring, optimization, and support to ensure your cloud environment performs at its best.</p>
+              <p>
+                We provide continuous monitoring, optimization, and support to
+                ensure your cloud environment performs at its best.
+              </p>
             </div>
           </div>
         </div>
@@ -373,10 +607,15 @@
     <section class="ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-md-10 py-5 text-center">
+          <div class="col-md-10 py-5 text-center cta-section">
             <h2 class="mb-4">Ready to transform your business with Cloud?</h2>
-            <p>Let's discuss how our Cloud and DevOps expertise can drive your growth.</p>
-            <a href="contact.html" class="btn btn-primary px-5 py-3 mt-3">Contact Us Today</a>
+            <p>
+              Let's discuss how our Cloud and DevOps expertise can drive your
+              growth.
+            </p>
+            <a href="contact.html" class="btn cta-btn px-5 py-3 mt-3"
+              >Contact Us Today</a
+            >
           </div>
         </div>
       </div>

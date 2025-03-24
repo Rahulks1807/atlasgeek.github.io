@@ -15,21 +15,160 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
-
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
-
     <link rel="stylesheet" href="css/aos.css" />
-
     <link rel="stylesheet" href="css/ionicons.min.css" />
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" href="css/jquery.timepicker.css" />
-
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Additional custom styles -->
+    <style>
+      /* Enhanced hero section */
+     
+      
+      .hero-wrap .container {
+        position: relative;
+        z-index: 2;
+      }
+      
+      /* Enhanced service cards */
+      .services-2 {
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+      
+      .services-2:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .services-2 .icon {
+        height: 70px;
+        width: 70px;
+        margin: 0 auto;
+        background: #4267B2;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+      }
+      
+      .services-2:hover .icon {
+        background: #2E4369;
+      }
+      
+      .services-2 .icon span {
+        color: white;
+        font-size: 2rem;
+      }
+      
+      /* Process cards */
+      .process-wrap {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+      }
+      
+      .process-wrap:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .process-count {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #4267B2;
+        color: white;
+        border-radius: 50%;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+      
+      /* Case studies */
+      .case-study {
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+      
+      .case-study:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .case-study h3 {
+        color: #4267B2;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      /* Technology logos */
+      .tech-logo {
+        transition: all 0.3s ease;
+        opacity: 0.8;
+        filter: grayscale(50%);
+      }
+      
+      .tech-logo:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: scale(1.05);
+      }
+      
+      /* CTA section */
+      .cta-section {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        padding: 80px 0;
+        color: white;
+        border-radius: 12px;
+        margin: 40px auto;
+      }
+
+      .cta-btn {
+        background: white;
+        color: #6a11cb;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn-primary {
+        background: white;
+        color: #4267B2;
+        border: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-primary:hover {
+        background: rgba(255, 255, 255, 0.9);
+        color: #2E4369;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -117,52 +256,52 @@
         <div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section ftco-animate">
             <h2 class="mb-4">Comprehensive Salesforce Solutions</h2>
-            <p>
+            <p class="lead">
               At AtlasGeek, we deliver end-to-end Salesforce services that transform your business processes and enhance customer relationships. Our certified Salesforce experts develop custom solutions that leverage the full potential of the Salesforce ecosystem to drive growth and efficiency.
             </p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-                <span class="flaticon-cloud"></span>
+            <div class="media block-6 services d-block bg-white p-5 mb-4" style="border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+              <div class="icon d-flex justify-content-center align-items-center mb-4" style="background: #4267B2; width: 80px; height: 80px; border-radius: 50%;">
+                <span class="flaticon-cloud" style="color: white; font-size: 2.5rem;"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Why Choose AtlasGeek for Salesforce</h3>
+                <h3 class="heading mb-4">Why Choose AtlasGeek for Salesforce</h3>
                 <ul class="list-unstyled">
-                  <li><i class="ion-ios-checkmark-circle mr-2"></i> Certified Salesforce professionals</li>
-                  <li><i class="ion-ios-checkmark-circle mr-2"></i> Proven track record across industries</li>
-                  <li><i class="ion-ios-checkmark-circle mr-2"></i> Agile methodology for faster delivery</li>
-                  <li><i class="ion-ios-checkmark-circle mr-2"></i> Cost-effective solutions</li>
-                  <li><i class="ion-ios-checkmark-circle mr-2"></i> Ongoing support and maintenance</li>
-                  <li><i class="ion-ios-checkmark-circle mr-2"></i> Industry best practices implementation</li>
+                  <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Certified Salesforce professionals</li>
+                  <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Proven track record across industries</li>
+                  <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Agile methodology for faster delivery</li>
+                  <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Cost-effective solutions</li>
+                  <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Ongoing support and maintenance</li>
+                  <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Industry best practices implementation</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
-                <span class="flaticon-layers"></span>
+            <div class="media block-6 services d-block bg-white p-5 mb-4" style="border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+              <div class="icon d-flex justify-content-center align-items-center mb-4" style="background: #4267B2; width: 80px; height: 80px; border-radius: 50%;">
+                <span class="flaticon-layers" style="color: white; font-size: 2.5rem;"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Our Salesforce Expertise</h3>
+                <h3 class="heading mb-4">Our Salesforce Expertise</h3>
                 <div class="row">
                   <div class="col-md-6">
                     <ul class="list-unstyled">
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Sales Cloud</li>
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Service Cloud</li>
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Marketing Cloud</li>
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Commerce Cloud</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Sales Cloud</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Service Cloud</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Marketing Cloud</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Commerce Cloud</li>
                     </ul>
                   </div>
                   <div class="col-md-6">
                     <ul class="list-unstyled">
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Lightning Components</li>
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Apex Programming</li>
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Visualforce</li>
-                      <li><i class="ion-ios-checkmark-circle mr-2"></i> Einstein Analytics</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Lightning Components</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Apex Programming</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Visualforce</li>
+                      <li class="d-flex align-items-center mb-3"><i class="ion-ios-checkmark-circle mr-3" style="color: #4267B2; font-size: 1.5rem;"></i> Einstein Analytics</li>
                     </ul>
                   </div>
                 </div>
@@ -178,12 +317,12 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
           <div class="col-md-4 heading-section ftco-animate">
-            <span class="subheading subheading-with-line"><small class="pr-2 bg-light">Services</small></span>
+            <span class="subheading subheading-with-line"><small class="pr-2 bg-white">Services</small></span>
             <h2 class="mb-4">Our Salesforce Services</h2>
           </div>
           <div class="col-md-8 pl-md-5 heading-section ftco-animate">
             <div class="pl-md-4 border-line">
-              <p>
+              <p class="lead">
                 From implementation and customization to integration and support, we provide a comprehensive range of Salesforce services designed to maximize your ROI and enhance business efficiency. Our expert team ensures your Salesforce solution is tailored to your specific business needs.
               </p>
             </div>
@@ -192,7 +331,7 @@
         
         <div class="row">
           <div class="col-md-6 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-2 d-block bg-light p-4 mb-4">
+            <div class="media block-6 services services-2 d-block bg-light p-5 mb-5">
               <div class="icon d-flex justify-content-center align-items-center">
                 <span class="flaticon-idea"></span>
               </div>
@@ -206,7 +345,7 @@
           </div>
           
           <div class="col-md-6 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-2 d-block bg-light p-4 mb-4">
+            <div class="media block-6 services services-2 d-block bg-light p-5 mb-5">
               <div class="icon d-flex justify-content-center align-items-center">
                 <span class="flaticon-compass-symbol"></span>
               </div>
@@ -220,7 +359,7 @@
           </div>
           
           <div class="col-md-6 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-2 d-block bg-light p-4 mb-4">
+            <div class="media block-6 services services-2 d-block bg-light p-5 mb-5">
               <div class="icon d-flex justify-content-center align-items-center">
                 <span class="flaticon-layers"></span>
               </div>
@@ -234,7 +373,7 @@
           </div>
           
           <div class="col-md-6 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-2 d-block bg-light p-4 mb-4">
+            <div class="media block-6 services services-2 d-block bg-light p-5 mb-5">
               <div class="icon d-flex justify-content-center align-items-center">
                 <span class="flaticon-idea"></span>
               </div>
@@ -248,7 +387,7 @@
           </div>
           
           <div class="col-md-6 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-2 d-block bg-light p-4 mb-4">
+            <div class="media block-6 services services-2 d-block bg-light p-5 mb-5">
               <div class="icon d-flex justify-content-center align-items-center">
                 <span class="flaticon-compass-symbol"></span>
               </div>
@@ -262,7 +401,7 @@
           </div>
           
           <div class="col-md-6 d-flex align-items-stretch ftco-animate">
-            <div class="media block-6 services services-2 d-block bg-light p-4 mb-4">
+            <div class="media block-6 services services-2 d-block bg-light p-5 mb-5">
               <div class="icon d-flex justify-content-center align-items-center">
                 <span class="flaticon-layers"></span>
               </div>
@@ -357,20 +496,58 @@
         </div>
         <div class="row text-center">
           <div class="col-lg-12 mb-5 ftco-animate">
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Sales Cloud" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Service Cloud" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Marketing Cloud" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Commerce Cloud" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Experience Cloud" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Einstein Analytics" style="width: 12vh" />
-          </div>
-          <div class="col-lg-12 mb-5 ftco-animate">
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Apex" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Visualforce" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Lightning Web Components" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="SOQL" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="Heroku" style="width: 12vh" />
-            <img class="img-fluid mx-2" src="/api/placeholder/120/80" alt="MuleSoft" style="width: 12vh" />
+            <div class="p-4 bg-white" style="border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Sales Cloud" style="width: 12vh" />
+                  <p class="mt-2 small">Sales Cloud</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Service Cloud" style="width: 12vh" />
+                  <p class="mt-2 small">Service Cloud</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Marketing Cloud" style="width: 12vh" />
+                  <p class="mt-2 small">Marketing Cloud</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Commerce Cloud" style="width: 12vh" />
+                  <p class="mt-2 small">Commerce Cloud</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Experience Cloud" style="width: 12vh" />
+                  <p class="mt-2 small">Experience Cloud</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Einstein Analytics" style="width: 12vh" />
+                  <p class="mt-2 small">Einstein Analytics</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Apex" style="width: 12vh" />
+                  <p class="mt-2 small">Apex</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Visualforce" style="width: 12vh" />
+                  <p class="mt-2 small">Visualforce</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Lightning Web Components" style="width: 12vh" />
+                  <p class="mt-2 small">Lightning Web Components</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="SOQL" style="width: 12vh" />
+                  <p class="mt-2 small">SOQL</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="Heroku" style="width: 12vh" />
+                  <p class="mt-2 small">Heroku</p>
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                  <img class="img-fluid tech-logo mx-2" src="/api/placeholder/120/80" alt="MuleSoft" style="width: 12vh" />
+                  <p class="mt-2 small">MuleSoft</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -415,10 +592,15 @@
     <section class="ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-md-10 py-5 text-center">
-            <h2 class="mb-4">Ready to transform your business with Salesforce?</h2>
-            <p>Let's discuss how our Salesforce development and testing expertise can drive your growth.</p>
-            <a href="contact.html" class="btn btn-primary px-5 py-3 mt-3">Contact Us Today</a>
+          <div class="col-md-10 py-5 text-center cta-section">
+            <h2 class="mb-4">Ready to transform your business with Cloud?</h2>
+            <p>
+              Let's discuss how our Cloud and DevOps expertise can drive your
+              growth.
+            </p>
+            <a href="contact.html" class="btn cta-btn px-5 py-3 mt-3"
+              >Contact Us Today</a
+            >
           </div>
         </div>
       </div>

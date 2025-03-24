@@ -30,6 +30,103 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /* Additional Custom Styles */
+      .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+      }
+
+      .rounded {
+        border-radius: 0.5rem !important;
+      }
+
+      .lead {
+        font-size: 1.15rem;
+        font-weight: 300;
+        line-height: 1.7;
+      }
+
+      .hover-effect {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      }
+
+      .tech-list li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .tech-list li:last-child {
+        border-bottom: none;
+      }
+
+      .tech-list li:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgba(255, 159, 67, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .services:hover .icon,
+      .services-2:hover .icon {
+        background: #ff9f43;
+        color: white;
+      }
+
+      .btn-white.btn-outline-white {
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .btn-white.btn-outline-white:hover {
+        background: #fff;
+        color: #ff9f43;
+      }
+
+            /* CTA section */
+            .cta-section {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        padding: 80px 0;
+        color: white;
+        border-radius: 12px;
+        margin: 40px auto;
+      }
+
+      .cta-btn {
+        background: white;
+        color: #6a11cb;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
     <nav
@@ -61,19 +158,30 @@
             <li class="nav-item">
               <a href="project.html" class="nav-link">Project</a>
             </li>
-            
+
             <li class="nav-item active dropdown">
-              <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                id="servicesDropdown"
+                role="button"
+              >
                 Services
               </a>
               <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <a class="dropdown-item" href="cloud.html">Cloud & DevOps</a>
-                <a class="dropdown-item" href="salesforce.html">Salesforce Development and Testing</a>
-                <a class="dropdown-item active" href="ui-ux.html">IT Consulting with UI/UX design</a>
-                <a class="dropdown-item" href="mobileApplication.html">Mobile Application Development</a>
+                <a class="dropdown-item" href="salesforce.html"
+                  >Salesforce Development and Testing</a
+                >
+                <a class="dropdown-item active" href="ui-ux.html"
+                  >IT Consulting with UI/UX design</a
+                >
+                <a class="dropdown-item" href="mobileApplication.html"
+                  >Mobile Application Development</a
+                >
               </div>
             </li>
-        
+
             <li class="nav-item">
               <a href="blog.html" class="nav-link">Blog</a>
             </li>
@@ -103,8 +211,13 @@
                 ><a href="index.html"
                   >Home <i class="ion-ios-arrow-forward"></i></a
               ></span>
-              <span class="mr-2">Services <i class="ion-ios-arrow-forward"></i></span>
-              <span>IT Consulting with UI/UX design <i class="ion-ios-arrow-forward"></i></span>
+              <span class="mr-2"
+                >Services <i class="ion-ios-arrow-forward"></i
+              ></span>
+              <span
+                >IT Consulting with UI/UX design
+                <i class="ion-ios-arrow-forward"></i
+              ></span>
             </p>
           </div>
         </div>
@@ -115,10 +228,15 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
+          <div class="col-md-8 heading-section text-center ftco-animate">
             <span class="subheading">Transforming User Experiences</span>
             <h2 class="mb-4">UI/UX Design Excellence</h2>
-            <p>At AtlasGeek, we create exceptional digital experiences that drive engagement, satisfaction, and business growth. Our UI/UX design services combine aesthetic appeal with functional efficiency to deliver solutions that delight users and achieve business goals.</p>
+            <p class="lead">
+              At AtlasGeek, we create exceptional digital experiences that drive
+              engagement, satisfaction, and business growth. Our UI/UX design
+              services combine aesthetic appeal with functional efficiency to
+              deliver solutions that delight users and achieve business goals.
+            </p>
           </div>
         </div>
       </div>
@@ -129,47 +247,82 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
           <div class="col-md-4 heading-section ftco-animate">
-            <span class="subheading subheading-with-line"><small class="pr-2 bg-light">Process</small></span>
+            <span class="subheading subheading-with-line"
+              ><small class="pr-2 bg-light">Process</small></span
+            >
             <h2 class="mb-4">Our Design Process</h2>
           </div>
           <div class="col-md-8 pl-md-5 heading-section ftco-animate">
             <div class="pl-md-4 border-line">
-              <p>Our comprehensive design approach ensures that every project delivers exceptional user experiences. We follow a proven methodology that combines research, creativity, and technical expertise to create solutions that are both beautiful and functional.</p>
+              <p class="lead">
+                Our comprehensive design approach ensures that every project
+                delivers exceptional user experiences. We follow a proven
+                methodology that combines research, creativity, and technical
+                expertise to create solutions that are both beautiful and
+                functional.
+              </p>
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-white p-5 text-center shadow-sm rounded"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-idea"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Research & Discovery</h3>
-                <p>We begin with in-depth research to understand your users, business objectives, and industry trends. This foundation ensures designs that resonate with your target audience and align with your business goals.</p>
+                <p>
+                  We begin with in-depth research to understand your users,
+                  business objectives, and industry trends. This foundation
+                  ensures designs that resonate with your target audience and
+                  align with your business goals.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-white p-5 text-center shadow-sm rounded"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Design & Prototyping</h3>
-                <p>Our designers create wireframes, mockups, and interactive prototypes that visualize the solution. This iterative process allows for early feedback and refinement before development begins.</p>
+                <p>
+                  Our designers create wireframes, mockups, and interactive
+                  prototypes that visualize the solution. This iterative process
+                  allows for early feedback and refinement before development
+                  begins.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block bg-white p-4 text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services d-block bg-white p-5 text-center shadow-sm rounded"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-layers"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Testing & Implementation</h3>
-                <p>We conduct thorough usability testing to validate design decisions and refine the user experience. Our team works closely with developers to ensure faithful implementation of the design vision.</p>
+                <p>
+                  We conduct thorough usability testing to validate design
+                  decisions and refine the user experience. Our team works
+                  closely with developers to ensure faithful implementation of
+                  the design vision.
+                </p>
               </div>
             </div>
           </div>
@@ -182,80 +335,142 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
           <div class="col-md-4 heading-section ftco-animate">
-            <span class="subheading subheading-with-line"><small class="pr-2 bg-white">Services</small></span>
+            <span class="subheading subheading-with-line"
+              ><small class="pr-2 bg-white">Services</small></span
+            >
             <h2 class="mb-4">UI/UX Design Services</h2>
           </div>
           <div class="col-md-8 pl-md-5 heading-section ftco-animate">
             <div class="pl-md-4 border-line">
-              <p>Our comprehensive UI/UX design services cover every aspect of creating exceptional digital experiences. From research and strategy to implementation and optimization, we deliver solutions that drive engagement and achieve business objectives.</p>
+              <p class="lead">
+                Our comprehensive UI/UX design services cover every aspect of
+                creating exceptional digital experiences. From research and
+                strategy to implementation and optimization, we deliver
+                solutions that drive engagement and achieve business objectives.
+              </p>
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 rounded shadow-sm hover-effect"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-idea"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">User Research & Analysis</h3>
-                <p>We conduct comprehensive user research including interviews, surveys, and behavioral analysis to understand user needs, preferences, and pain points. Our data-driven approach ensures designs that truly resonate with your target audience.</p>
+                <p>
+                  We conduct comprehensive user research including interviews,
+                  surveys, and behavioral analysis to understand user needs,
+                  preferences, and pain points. Our data-driven approach ensures
+                  designs that truly resonate with your target audience.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 rounded shadow-sm hover-effect"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Information Architecture</h3>
-                <p>Our experts develop clear, intuitive information structures that make complex systems navigable and user-friendly. We create logical content hierarchies, user flows, and site maps that enhance usability and support business objectives.</p>
+                <p>
+                  Our experts develop clear, intuitive information structures
+                  that make complex systems navigable and user-friendly. We
+                  create logical content hierarchies, user flows, and site maps
+                  that enhance usability and support business objectives.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 rounded shadow-sm hover-effect"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-layers"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">UI Design & Visual Identity</h3>
-                <p>We craft visually compelling interfaces that reflect your brand identity while ensuring optimal usability. Our designs balance aesthetic appeal with functional efficiency, creating experiences that are both beautiful and intuitive.</p>
+                <p>
+                  We craft visually compelling interfaces that reflect your
+                  brand identity while ensuring optimal usability. Our designs
+                  balance aesthetic appeal with functional efficiency, creating
+                  experiences that are both beautiful and intuitive.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 rounded shadow-sm hover-effect"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-idea"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Interactive Prototyping</h3>
-                <p>We develop interactive prototypes that simulate the user experience, allowing stakeholders to test and provide feedback on designs before development begins. This approach reduces development costs and ensures alignment with expectations.</p>
+                <p>
+                  We develop interactive prototypes that simulate the user
+                  experience, allowing stakeholders to test and provide feedback
+                  on designs before development begins. This approach reduces
+                  development costs and ensures alignment with expectations.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 rounded shadow-sm hover-effect"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Usability Testing</h3>
-                <p>Our comprehensive testing processes validate design decisions and identify opportunities for improvement. We conduct moderated and unmoderated testing sessions, gathering valuable insights that drive continuous refinement of the user experience.</p>
+                <p>
+                  Our comprehensive testing processes validate design decisions
+                  and identify opportunities for improvement. We conduct
+                  moderated and unmoderated testing sessions, gathering valuable
+                  insights that drive continuous refinement of the user
+                  experience.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-6 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <div class="icon d-flex justify-content-center align-items-center">
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 rounded shadow-sm hover-effect"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-layers"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Design Systems</h3>
-                <p>We create comprehensive design systems that ensure consistency across all digital touchpoints. These systems include reusable components, style guides, and documentation that streamline development and maintain design integrity over time.</p>
+                <p>
+                  We create comprehensive design systems that ensure consistency
+                  across all digital touchpoints. These systems include reusable
+                  components, style guides, and documentation that streamline
+                  development and maintain design integrity over time.
+                </p>
               </div>
             </div>
           </div>
@@ -264,7 +479,7 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="ftco-section bg-light">
+    <section class="ftco-section bg-light parallax">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -273,37 +488,61 @@
         </div>
         <div class="row">
           <div class="col-md-4 ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            <div
+              class="media block-6 services d-block text-center bg-white p-5 rounded shadow-sm"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-idea"></span>
               </div>
               <div class="media-body">
                 <h3 class="heading">Increased User Engagement</h3>
-                <p>Well-designed interfaces capture attention and encourage interaction, leading to longer sessions, repeat visits, and higher conversion rates.</p>
+                <p>
+                  Well-designed interfaces capture attention and encourage
+                  interaction, leading to longer sessions, repeat visits, and
+                  higher conversion rates.
+                </p>
               </div>
-            </div>      
+            </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            <div
+              class="media block-6 services d-block text-center bg-white p-5 rounded shadow-sm"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-compass-symbol"></span>
               </div>
               <div class="media-body">
                 <h3 class="heading">Enhanced Brand Perception</h3>
-                <p>Professional design communicates quality and reliability, strengthening brand identity and fostering trust among your users.</p>
+                <p>
+                  Professional design communicates quality and reliability,
+                  strengthening brand identity and fostering trust among your
+                  users.
+                </p>
               </div>
-            </div>      
+            </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon d-flex justify-content-center align-items-center mb-4">
+            <div
+              class="media block-6 services d-block text-center bg-white p-5 rounded shadow-sm"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
                 <span class="flaticon-layers"></span>
               </div>
               <div class="media-body">
                 <h3 class="heading">Improved Conversion Rates</h3>
-                <p>Intuitive interfaces reduce friction in the user journey, making it easier for visitors to complete desired actions and become customers.</p>
+                <p>
+                  Intuitive interfaces reduce friction in the user journey,
+                  making it easier for visitors to complete desired actions and
+                  become customers.
+                </p>
               </div>
-            </div>    
+            </div>
           </div>
         </div>
       </div>
@@ -314,50 +553,78 @@
       <div class="container">
         <div class="row justify-content-start mb-5 pb-2">
           <div class="col-md-4 heading-section ftco-animate">
-            <span class="subheading subheading-with-line"><small class="pr-2 bg-white">Tools</small></span>
+            <span class="subheading subheading-with-line"
+              ><small class="pr-2 bg-white">Tools</small></span
+            >
             <h2 class="mb-4">Design Technologies We Use</h2>
           </div>
           <div class="col-md-8 pl-md-5 heading-section ftco-animate">
             <div class="pl-md-4 border-line">
-              <p>We leverage industry-leading design tools and technologies to create exceptional digital experiences. Our expertise spans a wide range of platforms and frameworks, enabling us to deliver solutions tailored to your specific needs.</p>
+              <p class="lead">
+                We leverage industry-leading design tools and technologies to
+                create exceptional digital experiences. Our expertise spans a
+                wide range of platforms and frameworks, enabling us to deliver
+                solutions tailored to your specific needs.
+              </p>
             </div>
           </div>
         </div>
-        
-        <div class="row text-center">
+
+        <div class="row">
           <div class="col-md-4 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <h3 class="heading">Design Tools</h3>
-              <ul class="list-unstyled">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Sketch</li>
-                <li>InVision</li>
-                <li>Adobe Creative Cloud</li>
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 text-center rounded shadow-sm"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
+                <span class="flaticon-idea"></span>
+              </div>
+              <h3 class="heading mb-4">Design Tools</h3>
+              <ul class="list-unstyled tech-list">
+                <li class="py-2">Figma</li>
+                <li class="py-2">Adobe XD</li>
+                <li class="py-2">Sketch</li>
+                <li class="py-2">InVision</li>
+                <li class="py-2">Adobe Creative Cloud</li>
               </ul>
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <h3 class="heading">Frontend Technologies</h3>
-              <ul class="list-unstyled">
-                <li>HTML5 & CSS3</li>
-                <li>React</li>
-                <li>Tailwind CSS</li>
-                <li>Material UI</li>
-                <li>JavaScript Frameworks</li>
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 text-center rounded shadow-sm"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
+                <span class="flaticon-compass-symbol"></span>
+              </div>
+              <h3 class="heading mb-4">Frontend Technologies</h3>
+              <ul class="list-unstyled tech-list">
+                <li class="py-2">HTML5 & CSS3</li>
+                <li class="py-2">React</li>
+                <li class="py-2">Tailwind CSS</li>
+                <li class="py-2">Material UI</li>
+                <li class="py-2">JavaScript Frameworks</li>
               </ul>
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="media block-6 services-2 d-block bg-light p-4 mb-4">
-              <h3 class="heading">Research & Testing</h3>
-              <ul class="list-unstyled">
-                <li>Hotjar</li>
-                <li>UserTesting</li>
-                <li>Maze</li>
-                <li>Google Analytics</li>
-                <li>Optimal Workshop</li>
+            <div
+              class="media block-6 services-2 d-block bg-light p-5 mb-4 text-center rounded shadow-sm"
+            >
+              <div
+                class="icon d-flex justify-content-center align-items-center mb-4"
+              >
+                <span class="flaticon-layers"></span>
+              </div>
+              <h3 class="heading mb-4">Research & Testing</h3>
+              <ul class="list-unstyled tech-list">
+                <li class="py-2">Hotjar</li>
+                <li class="py-2">UserTesting</li>
+                <li class="py-2">Maze</li>
+                <li class="py-2">Google Analytics</li>
+                <li class="py-2">Optimal Workshop</li>
               </ul>
             </div>
           </div>
@@ -366,13 +633,18 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="ftco-section bg-light ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-md-10 py-5 text-center">
-            <h2 class="mb-4">Ready to transform your business with Salesforce?</h2>
-            <p>Let's discuss how our Salesforce development and testing expertise can drive your growth.</p>
-            <a href="contact.html" class="btn btn-primary px-5 py-3 mt-3">Contact Us Today</a>
+          <div class="col-md-10 py-5 text-center cta-section">
+            <h2 class="mb-4">Ready to transform your business with Cloud?</h2>
+            <p>
+              Let's discuss how our Cloud and DevOps expertise can drive your
+              growth.
+            </p>
+            <a href="contact.html" class="btn cta-btn px-5 py-3 mt-3"
+              >Contact Us Today</a
+            >
           </div>
         </div>
       </div>
