@@ -96,6 +96,23 @@
         margin-bottom: 1rem;
         font-size: 1.2rem;
       }
+
+      .section-heading {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+      }
+
+      .section-heading:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+      }
       
       /* Case studies */
       .case-study {
@@ -255,7 +272,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Comprehensive Salesforce Solutions</h2>
+            <h2 class="mb-4 section-heading">Comprehensive Salesforce Solutions</h2>
             <p class="lead">
               At AtlasGeek, we deliver end-to-end Salesforce services that transform your business processes and enhance customer relationships. Our certified Salesforce experts develop custom solutions that leverage the full potential of the Salesforce ecosystem to drive growth and efficiency.
             </p>
@@ -454,7 +471,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
+          <div class="col-md-4 mt-2 ftco-animate">
             <div class="process-wrap d-flex">
               <div class="text">
                 <span class="process-count">04</span>
@@ -463,7 +480,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
+          <div class="col-md-4 mt-2 ftco-animate">
             <div class="process-wrap d-flex">
               <div class="text">
                 <span class="process-count">05</span>
@@ -472,7 +489,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
+          <div class="col-md-4 mt-2 ftco-animate">
             <div class="process-wrap d-flex">
               <div class="text">
                 <span class="process-count">06</span>
@@ -486,7 +503,7 @@
     </section>
 
     <!-- Technologies Section -->
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -551,10 +568,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Success Stories -->
-    <section class="ftco-section bg-light">
+    <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
@@ -589,7 +606,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <section class="ftco-section bg-light ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-10 py-5 text-center cta-section">

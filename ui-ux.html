@@ -126,6 +126,23 @@
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
       }
+
+      .section-heading {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+      }
+
+      .section-heading:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 3px;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+      }
     </style>
   </head>
   <body>
@@ -229,8 +246,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-8 heading-section text-center ftco-animate">
-            <span class="subheading">Transforming User Experiences</span>
-            <h2 class="mb-4">UI/UX Design Excellence</h2>
+            <h2 >Transforming User Experiences</h2>
+            <h2 class="mb-4 section-heading">UI/UX Design Excellence</h2>
             <p class="lead">
               At AtlasGeek, we create exceptional digital experiences that drive
               engagement, satisfaction, and business growth. Our UI/UX design
