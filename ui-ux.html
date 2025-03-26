@@ -143,6 +143,24 @@
         height: 3px;
         background: linear-gradient(to right, #6a11cb, #2575fc);
       }
+
+      .tech-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+      .tech-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .tech-header {
+        /* background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); */
+        padding: 25px 15px;
+        color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
     </style>
   </head>
   <body>
@@ -287,10 +305,13 @@
             <div
               class="media block-6 services d-block bg-white p-5 text-center shadow-sm rounded"
             >
-              <div
+              <!-- <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
                 <span class="flaticon-idea"></span>
+              </div> -->
+              <div class="tech-header text-center">
+                <img src="images/Research & Discovery.jpg" alt="Android" class="mb-3" style="height: 200px; width: 200px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Research & Discovery</h3>
@@ -307,10 +328,13 @@
             <div
               class="media block-6 services d-block bg-white p-5 text-center shadow-sm rounded"
             >
-              <div
+              <!-- <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
                 <span class="flaticon-compass-symbol"></span>
+              </div> -->
+              <div class="tech-header text-center">
+                <img src="images/Design & Prototyping.jpg" alt="Android" class="mb-3" style="height: 200px; width: 200px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Design & Prototyping</h3>
@@ -327,10 +351,13 @@
             <div
               class="media block-6 services d-block bg-white p-5 text-center shadow-sm rounded"
             >
-              <div
+              <!-- <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
                 <span class="flaticon-layers"></span>
+              </div> -->
+              <div class="tech-header text-center">
+                <img src="images/Testing & Implementation.jpg" alt="Android" class="mb-3" style="height: 200px; width: 200px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Testing & Implementation</h3>
@@ -377,7 +404,7 @@
               <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
-                <span class="flaticon-idea"></span>
+              <img src="images/Design-Tools.png" alt="iOS" style="height: 40px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">User Research & Analysis</h3>
@@ -397,7 +424,7 @@
               <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
-                <span class="flaticon-compass-symbol"></span>
+              <img src="images/Information-Architecture.png" alt="iOS" style="height: 40px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Information Architecture</h3>
@@ -417,7 +444,7 @@
               <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
-                <span class="flaticon-layers"></span>
+              <img src="images/Design-Visual.png" alt="iOS" style="height: 40px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">UI Design & Visual Identity</h3>
@@ -437,7 +464,7 @@
               <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
-                <span class="flaticon-idea"></span>
+              <img src="images/Interactive-Prototyping.png" alt="iOS" style="height: 40px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Interactive Prototyping</h3>
@@ -457,7 +484,7 @@
               <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
-                <span class="flaticon-compass-symbol"></span>
+              <img src="images/Usability-Testing.png" alt="iOS" style="height: 40px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Usability Testing</h3>
@@ -478,7 +505,7 @@
               <div
                 class="icon d-flex justify-content-center align-items-center mb-4"
               >
-                <span class="flaticon-layers"></span>
+              <img src="images/Design-Systems.png" alt="iOS" style="height: 40px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Design Systems</h3>
@@ -588,61 +615,55 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div
-              class="media block-6 services-2 d-block bg-light p-5 mb-4 text-center rounded shadow-sm"
-            >
-              <div
-                class="icon d-flex justify-content-center align-items-center mb-4"
-              >
-                <span class="flaticon-idea"></span>
+          <div class="col-lg-4 col-md-6 ftco-animate">
+            <div class="tech-card mb-4">
+              <div class="tech-header text-center" style="background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);">
+                <img src="images/Design-Tools.png" alt="iOS" class="mb-3" style="height: 100px;">
+                <h2 class="heading text-white">Design Tools</h2>
               </div>
-              <h3 class="heading mb-4">Design Tools</h3>
-              <ul class="list-unstyled tech-list">
-                <li class="py-2">Figma</li>
+              <div class="bg-white p-4">
+                <ul class="list-unstyled tech-list pricing-text mb-0 text-center">
+                  <li class="py-2">Figma</li>
                 <li class="py-2">Adobe XD</li>
                 <li class="py-2">Sketch</li>
                 <li class="py-2">InVision</li>
                 <li class="py-2">Adobe Creative Cloud</li>
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
-            <div
-              class="media block-6 services-2 d-block bg-light p-5 mb-4 text-center rounded shadow-sm"
-            >
-              <div
-                class="icon d-flex justify-content-center align-items-center mb-4"
-              >
-                <span class="flaticon-compass-symbol"></span>
+          <div class="col-lg-4 col-md-6 ftco-animate">
+            <div class="tech-card mb-4">
+              <div class="tech-header text-center" style="background-image: linear-gradient(to right, #f6d365 0%, #fee140 100%);">
+                <img src="images/Frontend-Technologies.png" alt="iOS" class="mb-3" style="height: 100px;">
+                <h2 class="heading text-white">Frontend Technologies</h2>
               </div>
-              <h3 class="heading mb-4">Frontend Technologies</h3>
-              <ul class="list-unstyled tech-list">
-                <li class="py-2">HTML5 & CSS3</li>
-                <li class="py-2">React</li>
-                <li class="py-2">Tailwind CSS</li>
-                <li class="py-2">Material UI</li>
-                <li class="py-2">JavaScript Frameworks</li>
-              </ul>
+              <div class="bg-white p-4">
+                <ul class="list-unstyled tech-list pricing-text mb-0 text-center">
+                  <li class="py-2">HTML5 & CSS3</li>
+                  <li class="py-2">React</li>
+                  <li class="py-2">Tailwind CSS</li>
+                  <li class="py-2">Material UI</li>
+                  <li class="py-2">JavaScript Frameworks</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 ftco-animate">
-            <div
-              class="media block-6 services-2 d-block bg-light p-5 mb-4 text-center rounded shadow-sm"
-            >
-              <div
-                class="icon d-flex justify-content-center align-items-center mb-4"
-              >
-                <span class="flaticon-layers"></span>
+          <div class="col-lg-4 col-md-6 ftco-animate">
+            <div class="tech-card mb-4">
+              <div class="tech-header text-center" style="background-image: linear-gradient(120deg, #fee140 0%, #fa709a 100%);">
+                <img src="images/Research-Testing.png" alt="iOS" class="mb-3" style="height: 100px;">
+                <h2 class="heading text-white">Research & Testing</h2>
               </div>
-              <h3 class="heading mb-4">Research & Testing</h3>
-              <ul class="list-unstyled tech-list">
-                <li class="py-2">Hotjar</li>
-                <li class="py-2">UserTesting</li>
-                <li class="py-2">Maze</li>
-                <li class="py-2">Google Analytics</li>
-                <li class="py-2">Optimal Workshop</li>
-              </ul>
+              <div class="bg-white p-4">
+                <ul class="list-unstyled tech-list pricing-text mb-0 text-center">
+                  <li class="py-2">Hotjar</li>
+                  <li class="py-2">UserTesting</li>
+                  <li class="py-2">Maze</li>
+                  <li class="py-2">Google Analytics</li>
+                  <li class="py-2">Optimal Workshop</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
