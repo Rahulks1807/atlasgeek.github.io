@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -40,9 +41,9 @@
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="about.html" class="nav-link">About</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="project.html" class="nav-link">Project</a>
             </li>
@@ -169,27 +170,32 @@
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#"
+                  <a href="index.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Home</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#"
                     ><span class="icon-long-arrow-right mr-2"></span>About</a
                   >
-                </li>
+                </li> -->
                 <li>
-                  <a href="#"
+                  <a href="cloud.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Services</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="project.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Projects</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="blog.html"
+                    ><span class="icon-long-arrow-right mr-2"></span>Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Contact</a
                   >
                 </li>
@@ -201,25 +207,24 @@
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#"
+                  <a href="cloud.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Cloud and
                     DevOps</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="salesforce.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Salesforce
                     Development and Testing</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>IT
-                    Consulting with IT Consulting with UI/UX design</a
+                  <a href="ui-ux.html"
+                    ><span class="icon-long-arrow-right mr-2"></span>IT Consulting with UI/UX design</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="mobileApplication.html"
                     ><span class="icon-long-arrow-right mr-2"></span>Mobile
                     Application Development</a
                   >
@@ -233,7 +238,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md">
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Newsletter</h2>
               <p>
@@ -254,7 +259,7 @@
                 </div>
               </form>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
@@ -295,8 +300,34 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>'
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOH2khzkrRmFfNgChzxjr5Fe3aSst-TVA"></script>
-  <script src="js/google-map.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOH2khzkrRmFfNgChzxjr5Fe3aSst-TVA"></script>
+  <script src="js/google-map.js"></script> -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script>
+      // Coordinates for Bengaluru (Bangalore), India
+      const latitude = 12.971598;
+      const longitude = 77.594566;
+
+      // Initialize the map
+      const map = L.map('map').setView([latitude, longitude], 10);
+
+      // Add the OpenStreetMap tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      // Add a red marker for the location
+      L.circleMarker([latitude, longitude], {
+          radius: 8,
+          fillColor: "#FF0000",
+          color: "#000",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.8
+      }).addTo(map)
+      // .bindPopup('AtlasGeek<br>Bengaluru, India')
+      .openPopup();
+  </script>
   <script src="js/main.js"></script>
     
   </body>
